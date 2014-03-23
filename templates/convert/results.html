@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+{% load static %} 
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="ico/favicon.ico">
+
+    <title>Results</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="{% static "css/bootstrap.min.css" %}" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="{% static "cover.css" %}" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <div class="site-wrapper">
+
+      <div class="site-wrapper-inner">
+
+        <div class="cover-container">
+
+          <div class="masthead clearfix">
+            <div class="inner">
+              <h3 class="pull-left">A . M . T</h3>
+              <ul class="nav masthead-nav">
+                <li><a href="/">Home</a></li>
+                <li class="active"><a href="/convert">Convert</a></li>
+                <li><a href="/about">About</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="inner cover">
+            <h1 class="cover-heading">Results</h1>
+            <p class="lead">Following are the notes for the music file you uploaded.</p>
+            <textarea class="col-xs-12" id="textarea" rows="10" style="color:#2c2c2c;"  readonly>{{ results }}</textarea>
+			
+          </div>
+			<p class="lead">
+              <a href="/convert" class="btn btn-lg btn-default">Try Again</a>&nbsp &nbsp&nbsp &nbsp<a href="dmidi/" class="btn btn-lg btn-default">Get MIDI</a>&nbsp &nbsp&nbsp &nbsp<a href="dpdf/" class="btn btn-lg btn-default">Get PDF</a>
+            </p>
+<br>
+          <div class="mastfoot">
+            <div class="inner">
+              <p>Design, by <a href="http://www.facebook.com/govindsmenokee">Govind S Menokee</a>.</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="{% static "js/jquery.min.js" %}"></script>
+    <script src="{% static "js/bootstrap.min.js" %}"></script>
+  </body>
+</html>
+
